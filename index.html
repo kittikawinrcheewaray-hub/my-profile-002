@@ -3,28 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <meta name="theme-color" content="#10172a">
+    <meta name="description" content="My Developer Portfolio — เว็บไซต์แนะนำตัวและผลงานของกิตติกวิน อาชีวระงับโรค">
+    <title>My Developer Portfolio | กิตติกวิน</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <main class="profile-card">
-        <div class="profile-header">
-            <img class="profile-photo" src="images/กูแดง.jpg" alt="รูปโปรไฟล์">
-            <h1>My Profile</h1>
-        </div>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="กลับไปส่วนหน้าหลัก">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>EURO<span class="brand-accent">.DEV</span></span>
+        </a>
 
-        <p>ชื่อ นามสกุล: <span id="fullname">กิตติกวิน อาชีวระงับโรค</span></p>
-        <p>ชื่อเล่น: <span id="nicname">ยูโร</span></p>
-        <p>รหัสประจำตัว: <span id="studentID">68219010002</span></p>
+        <nav class="site-nav" aria-label="เมนูหลัก">
+            <a href="#about">เกี่ยวกับฉัน</a>
+            <a href="#skills">ทักษะ</a>
+            <a href="#projects">ผลงาน</a>
+        </nav>
+    </header>
 
-        <div class="motto">
-            <h2>คติประจำใจ</h2>
-            <p id="motto">อบต ย่อมาจากอาบาตตาคัม</p>
-        </div>
+    <main>
+        <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> นักเรียนที่สนใจการพัฒนาเว็บไซต์</p>
+                <h1 id="hero-title">สวัสดีครับ<br>ผมชื่อ <span>กิตติกวิน</span></h1>
+                <p class="hero-description">
+                    ยินดีต้อนรับสู่พื้นที่รวบรวมเรื่องราว ทักษะที่กำลังเรียนรู้
+                    และผลงานพัฒนาเว็บไซต์ของผม
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">ดูผลงานของฉัน <span aria-hidden="true">↓</span></a>
+                    <a class="button button-secondary" href="#about">รู้จักฉัน</a>
+                </div>
+            </div>
 
-        <button id="greetingBtn" type="button">e wave</button>
-        <p id="greetingMessage" aria-live="polite">กดปุ่มเพื่อแสดงคำทักทาย</p>
+            <div class="hero-visual">
+                <div class="photo-frame">
+                    <img src="images/กูแดง.jpg" alt="รูปโปรไฟล์ของกิตติกวิน">
+                </div>
+                <span class="floating-tag">HELLO, WORLD!</span>
+                <span class="visual-orbit orbit-one" aria-hidden="true"></span>
+                <span class="visual-orbit orbit-two" aria-hidden="true"></span>
+            </div>
+        </section>
+
+        <section class="content-section section-shell" id="about" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="eyebrow">01 / ABOUT ME</p>
+                <h2 id="about-title">เกี่ยวกับ<span>ฉัน</span></h2>
+                <p>เริ่มต้นเรียนรู้ทีละบรรทัด และสนุกกับการเปลี่ยนไอเดียให้เป็นเว็บไซต์</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-copy">
+                    <h3>นักพัฒนาเว็บไซต์มือใหม่</h3>
+                    <p>
+                        ผมชื่อ <strong>กิตติกวิน อาชีวระงับโรค</strong> ชื่อเล่น <strong>ยูโร</strong>
+                        กำลังเรียนรู้การสร้างเว็บไซต์ด้วย HTML, CSS และ JavaScript
+                        พร้อมฝึกทำโปรเจกต์เพื่อพัฒนาทักษะและต่อยอดไอเดียของตัวเอง
+                    </p>
+                    <p class="motto"><span aria-hidden="true">✦</span> “อบต ย่อมาจากอาบาตตาคัม”</p>
+                </div>
+                <dl class="profile-details">
+                    <div>
+                        <dt>ชื่อเล่น</dt>
+                        <dd>ยูโร</dd>
+                    </div>
+                    <div>
+                        <dt>รหัสนักเรียน</dt>
+                        <dd>68219010002</dd>
+                    </div>
+                    <div>
+                        <dt>สิ่งที่สนใจ</dt>
+                        <dd>การพัฒนาเว็บไซต์</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="content-section section-shell" id="skills" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <p class="eyebrow">02 / SKILLS</p>
+                <h2 id="skills-title">ทักษะที่<span>สนใจ</span></h2>
+                <p>พื้นฐานที่กำลังฝึกฝนและนำไปใช้สร้างเว็บไซต์</p>
+            </div>
+
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <span class="skill-icon html-icon" aria-hidden="true">01</span>
+                    <h3>HTML</h3>
+                    <p>จัดโครงสร้างเนื้อหาให้เป็นระเบียบและมีความหมาย</p>
+                    <span class="skill-level">กำลังเรียนรู้</span>
+                </li>
+                <li class="skill-card">
+                    <span class="skill-icon css-icon" aria-hidden="true">02</span>
+                    <h3>CSS</h3>
+                    <p>ตกแต่งสี ตัวอักษร และจัดหน้าเว็บให้ใช้งานง่าย</p>
+                    <span class="skill-level">กำลังเรียนรู้</span>
+                </li>
+                <li class="skill-card">
+                    <span class="skill-icon js-icon" aria-hidden="true">03</span>
+                    <h3>JavaScript</h3>
+                    <p>เพิ่มการโต้ตอบและลูกเล่นให้หน้าเว็บไซต์</p>
+                    <span class="skill-level">กำลังเรียนรู้</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="content-section projects-section section-shell" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="eyebrow">03 / SELECTED WORK</p>
+                <h2 id="projects-title">ผลงาน<span>ของฉัน</span></h2>
+                <p>โปรเจกต์ที่ได้ลงมือทำและใช้ฝึกทักษะการพัฒนาเว็บไซต์</p>
+            </div>
+
+            <article class="project-card">
+                <div class="project-preview" aria-hidden="true">
+                    <div class="preview-window">
+                        <div class="preview-toolbar"><i></i><i></i><i></i></div>
+                        <div class="preview-content">
+                            <span class="preview-label">MY PROFILE</span>
+                            <span class="preview-title">Hello, I'm Euro<span>.</span></span>
+                            <span class="preview-line"></span>
+                            <span class="preview-button">Explore my page ↗</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-copy">
+                    <p class="project-type">PERSONAL WEBSITE</p>
+                    <h3>My Developer Profile</h3>
+                    <p>
+                        เว็บไซต์แนะนำตัวที่รวบรวมข้อมูลส่วนตัว ทักษะที่สนใจ
+                        และผลงานไว้ในหน้าเดียว พร้อมเมนูนำทางไปยังแต่ละส่วน
+                    </p>
+                    <ul class="project-tags" aria-label="เทคโนโลยีที่ใช้">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Responsive</li>
+                    </ul>
+                </div>
+                <span class="project-number" aria-hidden="true">01</span>
+            </article>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="section-shell footer-inner">
+            <a class="brand" href="#home" aria-label="กลับไปด้านบน">
+                <span class="brand-mark">&lt;/&gt;</span>
+                <span>EURO<span class="brand-accent">.DEV</span></span>
+            </a>
+            <p>สร้างด้วยความตั้งใจและกำลังเรียนรู้ทุกวัน</p>
+            <small>© 2026 กิตติกวิน อาชีวระงับโรค</small>
+        </div>
+    </footer>
 </body>
 </html>
